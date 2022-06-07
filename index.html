@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/style.css">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Enter a number to star</h1>
+    <h1>Enter a number to start</h1>
     <input type="text" id="input">
-
+    <input type="submit" id="submit" value="submit" onclick="test">
 <script>
     var input = document.getElementById("input").value;
     console.log(input);
+
+    function test(){
+        var input = document.getElementById("input").value;
+        console.log(input);
+    }
 </script>
 
 </body>
