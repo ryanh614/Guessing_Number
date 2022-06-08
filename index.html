@@ -1,8 +1,11 @@
-<link rel="stylesheet" href="css/style.css">
+
 
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
+<link rel="stylesheet" href="css/style.css">
+<script src="main.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,34 +15,11 @@
     <h1>Enter a number to start</h1>
     
     <form name = "input" id="input">
-        <input type="number" name="number" id="number">
+        <input type="text" name="number" id="number" value = 1>
         <input type="button" value="Submit" id="submit" onclick = "check"> 
     </form>
 
-<script>
-    
 
-//var a1 = document.getElementById("a1").value;
-
-
-var ramdomNum = Math.floor(Math.random() * 20); 
-
-var userNum = document.forms["input"]["number"].value;
-    console.log(userNum);
-
-console.log(ramdomNum);
-    
-function check() {
-    if (userNum == ramdomNum) {
-        alert("You win!");
-    } else if (userNum > ramdomNum) {
-        alert("Too high!");
-    } else if (userNum < ramdomNum) {
-        alert("Too low!");
-    }
-}
-
-</script>
 
 </body>
 </html>
