@@ -1,3 +1,5 @@
+import random 
+
 randNum = random.randint(1, 20)
 print("I'm thinking of a number between 1 and 20.")
 guess = int(input("Take a guess: "))
@@ -7,3 +9,6 @@ while guess != randNum:
     else:
         print("Too low, guess higher.")
     guess = int(input("Take a guess: "))
+
+if guess == randNum:
+    print("You got it! The number was", randNum)
